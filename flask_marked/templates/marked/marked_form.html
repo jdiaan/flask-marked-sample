@@ -1,0 +1,8 @@
+<form action="" method="POST" class="marked-form">
+    {{ form.hidden_tag() }}
+    <div class="marked-input-wrap">
+        {% include 'marked/marked_input.html' %}
+        {% include 'marked/marked_preview.html' %}
+    </div>
+    <button id="{{ form.submit.id }}" type="submit" value="{{ form.submit.label.text }}" class="marked-form-button">{{ form.submit.label.text }}</button>
+</form>

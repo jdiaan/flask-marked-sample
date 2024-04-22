@@ -1,0 +1,7 @@
+{% if 'highlight' not in filter_css %}
+<link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/{{ highlight_type }}.min.css">
+{% endif %}
+{% if 'style' not in filter_css %}
+<link rel="stylesheet" href="{{ url_for('%s.static' % (bp_name), filename='css/marked/styles.css') }}">
+{% endif %}

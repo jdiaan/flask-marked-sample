@@ -1,0 +1,203 @@
+.toolbar-button-wrap {
+    padding-top: 0.375rem;
+    padding-bottom: 0.375rem;
+}
+
+.space {
+    margin: 0.25rem;
+    border-right: 0.15rem solid rgb(200, 200, 200);
+}
+
+.marked-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border: 0.15rem solid;
+}
+
+.marked-toolbar>* {
+    margin-right: 0.4rem;
+}
+
+.marked-toolbar>*:last-child {
+    margin-right: 0;
+}
+
+.marked-edit {
+    padding-top: 1rem;
+}
+
+.marked-title-wrap {
+    text-align: center;
+    max-width: 42rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.marked-title {
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+}
+
+.marked-preview {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.875rem;
+    padding-right: 0.875rem;
+    border-right: 0.15rem solid;
+    border-bottom: 0.15rem solid;
+    overflow-wrap: break-word;
+    overflow-y: auto;
+    display: block;
+}
+
+.marked-input {
+    border: none;
+    box-shadow: none;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.875rem;
+    padding-right: 0.875rem;
+    border-right: 0.15rem solid;
+    border-left: 0.15rem solid;
+    border-bottom: 0.15rem solid;
+    resize: none;
+    display: block;
+}
+
+.marked-form {
+    width: 100%;
+}
+
+.marked-input-wrap {
+    width: 100%;
+    height: 500px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    display: grid;
+}
+
+.marked-form-button {
+    margin-top: 0.5rem;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    text-align: center;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    padding-left: 0.875rem;
+    padding-right: 0.875rem;
+    width: 100%;
+    display: block;
+}
+
+:root {
+    --color-text-main: 0, 0, 0;
+    --color-text-muted: 100, 100, 100;
+    --color-text-invert: 255, 255, 255;
+    --color-fill-muted: 0, 0, 0;
+}
+
+.marked-edit .marked-preview h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    font-weight: 700;
+    letter-spacing: -.025em;
+    color: rgb(var(--color-text-main));
+}
+
+.marked-edit .marked-preview h2 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    color: rgb(var(--color-text-main));
+}
+
+.marked-edit .marked-preview h3 {
+    font-size: .875rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    color: rgb(var(--color-text-main));
+}
+
+.marked-edit .marked-preview h4 {
+    font-size: .875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    color: rgb(var(--color-text-main));
+}
+
+.marked-edit .marked-preview h5 {
+    font-size: .75rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    color: rgb(var(--color-text-main));
+}
+
+.marked-edit .marked-preview h6 {
+    font-size: .75rem;
+    line-height: .875rem;
+    font-weight: 400;
+    color: rgb(var(--color-text-main));
+}
+
+.marked-edit .marked-preview p {
+    margin-top: 1.75rem;
+    margin-bottom: 1.75rem;
+}
+
+.marked-edit .marked-preview blockquote {
+    padding: 0 1em;
+    border-left: .125em solid rgba(var(--color-text-muted), 0.5);
+}
+
+.marked-edit .marked-preview ol {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    padding-left: 1.5rem;
+    list-style-type: decimal;
+}
+
+.marked-edit .marked-preview ul {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    padding-left: 1.5rem;
+    list-style-type: disc;
+}
+
+.marked-edit .marked-preview li {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-left: .875rem;
+}
+
+.marked-edit .marked-preview hr {
+    size: 2px;
+}
+
+.marked-edit .marked-preview a {
+    box-shadow: inset 0 -2px 0 0 rgb(var(--color-text-main));
+    transition-property: box-shadow;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 500ms;
+}
+
+.marked-edit .marked-preview a:hover {
+    box-shadow: inset 0 -8px 0 0 rgba(var(--color-text-main), 0.5);
+}
+
+.marked-edit .marked-preview pre code {
+    border-radius: .5rem;
+    padding: 2rem;
+}
+
+.marked-edit .marked-preview p code {
+    background-color: rgb(var(--color-fill-muted));
+    color: rgb(var(--color-text-invert));
+    padding: .25rem .375rem;
+    border-radius: .5rem;
+}
