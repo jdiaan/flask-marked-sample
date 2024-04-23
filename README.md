@@ -56,7 +56,7 @@ pip install Flask-WTF
 
 ## 示例
 
-如果你不想要完全自定义代码：
+如果你不想要自定义代码，你可以直接运行以下代码，或者使用[app.py](example/app.py)直接运行：
 ```python
 from flask import Flask, render_template
 from flask_marked import MarkedForm
@@ -82,9 +82,9 @@ if __name__ == "__main__":
 
 ```
 
-![镇楼图](example/images/Snipaste_2024-04-22_22-31-13.jpg "Yi4K+正在测试中")
+![测试界面图](example/images/Snipaste_2024-04-22_22-31-13.jpg "测试界面图")
 
-还可以强的自定义的HTML，[index.html](flask_marked/templates/marked/index.html)：
+还可以自定义的HTML代码，[index.html](flask_marked/templates/marked/index.html)：
 ```html
 <html lang="zh-CN">
 
@@ -113,7 +113,7 @@ if __name__ == "__main__":
 ```
 
 ## 自定义
-本库提供非常大的自定义空间。
+本库提供自定义范围非常得大。
 
 ### 自定义HTML
 你可以使用FLask中自订的jinja2语句来实现扩展，你可以随心所欲的插入到自己的HTML文件中：
